@@ -1,0 +1,24 @@
+<form>
+    <input type="number" ng-model="userId" />
+    <button ng-click="findUser()">Find user with id</button>
+</form>
+
+<div ng-show="user.userId != null">
+    <table>
+        <tr>
+            <td>
+                Id: {{user.userId}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name: {{user.userName}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password: {{user.password}}
+            </td>
+        </tr>
+    </table>
+</div>
